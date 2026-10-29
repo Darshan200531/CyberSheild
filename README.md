@@ -147,7 +147,9 @@ The initial planning and design phases have been completed. The project has a de
 
 The next phase focuses on developing the application skeleton using Flask, configuring SQLite, implementing logging and health-check functionality, and creating the initial frontend.
 
-Planned project structure of CyberShield
+## 📁 Project Structure
+
+```text
 CyberShield-Mini-SIEM/
 │
 ├── app.py
@@ -231,6 +233,7 @@ CyberShield-Mini-SIEM/
 └── scripts/
     ├── generate_sample_logs.py
     └── initialize_db.py
+```
 ---
 
 ## 🚀 Upcoming Work: Weeks 4–6
