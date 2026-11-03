@@ -15,7 +15,7 @@ def initialize_database():
     with sqlite3.connect(DB_PATH) as connection:
         connection.execute("PRAGMA foreign_keys = ON")
 
-        schema = SCHEMA_PATH.read_text(encoding="utf-8")
+        schema = SCHEMA_PATH.read_text(encoding="utf-8") 
         connection.executescript(schema)
 
         print("CyberShield database initialized successfully.")
