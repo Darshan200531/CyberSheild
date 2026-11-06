@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{CyberShield}}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">CyberSheild Mini SIEM</p>
+      <h1>{{CyberShield}}</h1>
+    </div>
+    <span class="status"><span class="dot"></span> Application online</span>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      
+      <div>
+        <p class="eyebrow">PROJECT FOUNDATION · WEEK 4</p>
+        <h2>Security events at a glance</h2>
+        <p class="muted">The dashboard foundation is ready. Log ingestion and threat detection will be added in later milestones.</p>
+      </div>
+      <a class="button" href="/health" target="_blank" rel="noopener">Check API health</a>
+    </section>
+
+    <section class="cards">
+      <article class="metric"><span>Total events</span><strong>—</strong><small>Awaiting ingestion</small></article>
+      <article class="metric"><span>Open alerts</span><strong>—</strong><small>Detection engine not connected</small></article>
+      <article class="metric"><span>Critical alerts</span><strong>—</strong><small>Awaiting detection rules</small></article>
+      <article class="metric"><span>Monitored sources</span><strong>3</strong><small>Linux · Windows · Apache</small></article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div><p class="eyebrow">SYSTEM STATUS</p><h3>Application components</h3></div>
+        <span class="tag">Foundation build</span>
+      </div>
+      <div class="component-row"><span>Flask backend</span><span class="good">Configured</span></div>
+      <div class="component-row"><span>SQLite database</span><span class="good">Initialized</span></div>
+      <div class="component-row"><span>Log ingestion</span><span class="pending">Planned · Week 5</span></div>
+      <div class="component-row"><span>Detection engine</span><span class="pending">Planned · Later milestone</span></div>
+    </section>
+  </main>
+  <footer>CyberShield Mini SIEM · Educational project prototype</footer>
+  <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

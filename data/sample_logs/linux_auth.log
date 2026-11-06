@@ -1,0 +1,2 @@
+Nov 05 10:30:15 ubuntu sshd[1234]: Failed password for admin from 192.168.1.20 port 52210 ssh2
+Nov 05 10:31:02 ubuntu sshd[1235]: Accepted password for student from 192.168.1.15 port 52211 ssh2
